@@ -8,15 +8,43 @@
     <title>Document</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
-
         main {
             margin: 0 10%;
             border-style: solid;
             border-width: 1px;
             border-radius: 10px;
         }
-
+        
+        .p-padrao {
+            font-size: ;
+            font-family: 'Roboto', sans-serif;
+            font-weight: normal;
+            margin: 0;
+        }
+        
+        #img-header {
+            display: flex;
+            justify-content: center;
+        }
+        /*selection de idiomas*/
+        
+        #idiomas {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: end;
+        }
+        
+        .idiomas {
+            display: flex;
+        }
+        
+        .idiomas img {
+            width: 24px;
+            margin: 0 2px;
+        }
         /*titulos*/
+        
         .titulo-BR {
             font-size: 1.2rem;
             text-align: center;
@@ -24,8 +52,7 @@
             font-weight: normal;
             margin-bottom: 0.4rem;
         }
-
-
+        
         @media (max-width:768px) {
             .titulo-BR {
                 font-size: 1rem;
@@ -40,8 +67,8 @@
                 border-width: 1px;
                 border-radius: 10px;
             }
-
         }
+        
         @media (max-width:426px) {
             .titulo-BR {
                 font-size: 0.9rem;
@@ -56,10 +83,19 @@
 
 <body>
     <main>
-        <section class="idiomas"></section>
+        <section id="img-header">
+            <img src="./imagens/teatro img.png" alt="">
+        </section>
+        <section id="idiomas">
+            <p class="p-padrao">Selecione o idioma :</p>
+            <section class="idiomas">
+                <img class="portugues" src="./imagens/bandeirabrasil.png" alt="">
+                <img class="ingles" src="./imagens/bandeira-estados-unidos.webp" alt="" srcset="">
+                <img class="espanh ol" src="./imagens/espanhabandeiraxx.webp" alt="" srcset="">
+            </section>
+        </section>
         <section id="titulos">
-            <h2 class="titulo-BR">Gostaríamos de obter seu feedback em relação à experiência de conhecer nosso
-                maior patrimônio histórico e cultural. Vamos lá?</h2>
+            <h2 class="titulo-BR">Gostaríamos de obter seu feedback em relação à experiência de conhecer nosso maior patrimônio histórico e cultural. Vamos lá?</h2>
         </section>
     </main>
 </body>
