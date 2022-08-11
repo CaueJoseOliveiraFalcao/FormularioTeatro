@@ -30,6 +30,7 @@
         
         #idiomas {
             display: flex;
+            margin-top: 1rem;
             flex-direction: row;
             align-items: center;
             justify-content: end;
@@ -60,7 +61,6 @@
                 text-align: center;
                 font-family: 'Roboto', sans-serif;
                 font-weight: normal;
-                margin-bottom: 0.4rem;
             }
             main {
                 margin: 0;
@@ -73,10 +73,79 @@
         @media (max-width:426px) {
             .titulo-BR {
                 font-size: 1.4rem;
-                text-align: ;
+                margin-top: 2rem;
                 font-family: 'Roboto', sans-serif;
                 font-weight: normal;
                 margin-bottom: 0.4rem;
+            }
+        }
+        /*formulario*/
+        
+        #form {
+            margin: 1rem 6.5%;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 5px;
+        }
+        
+        label {
+            margin: 1rem 1rem!important;
+        }
+        
+        input {
+            border-radius: 4px;
+            padding: 7px;
+            font-size: 15px;
+        }
+        
+        .nome-input {
+            width: 20rem;
+        }
+        
+        .nomecontatoemail {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+        }
+        
+        .paiscidade {
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            flex-direction: row;
+        }
+        
+        @media (max-width:426px) {
+            input {
+                width: 100%!important;
+                margin: 0rem 1rem;
+            }
+            .nomecontatoemail {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            .paiscidade {
+                display: flex;
+                margin: 0;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            #form {
+                margin: 1rem 0;
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 5px;
+            }
+            .fix-div {
+                width: 89%;
+                margin-top: 1rem;
             }
         }
     </style>
@@ -98,8 +167,36 @@
         <section id="titulos">
             <h2 class="titulo-BR">Gostaríamos de obter seu feedback em relação à experiência de conhecer nosso maior patrimônio histórico e cultural. Vamos lá?</h2>
         </section>
+        <section id='form'>
+            <h2 class="p-padrao" style="text-align: center;">Formulario</h2>
+            <section class="nomecontatoemail">
+                <section class="fix-div">
+                    <label for="nome" class="p-padrao nome-input">Nome:</label>
+                    <input type="text" id="nome" class="nome-input" placeholder="Insira Seu Nome Completo" name="nome">
+                </section>
+                <section class="fix-div">
+                    <label for="tel" class="p-padrao">Contato:</label>
+                    <input type="tel" id="tel" placeholder="Contato de Telefone" name="tel">
+                </section>
+                <section class="fix-div">
+                    <label for="email" class="p-padrao">E-mail:</label>
+                    <input type="email" id="email" placeholder="Email" name="email">
+                </section>
+            </section>
+            <section class="paiscidade">
+                <section class="fix-div">
+                    <label for="pais" class="p-padrao">Pais:</label>
+                    <input type="text" id="pais" placeholder="País" name="pais">
+                </section>
+                <section class="fix-div">
+                    <label for="cidade" class="p-padrao">Cidade:</label>
+                    <input type="text" id="cidade" placeholder="Cidade" name="cidade">
+                </section>
+            </section>
+        </section>
+        </section>
     </main>
     <script src="./script.js"></script>
 </body>
 
-</html>
+</htm
