@@ -15,7 +15,9 @@
             border-width: 1px;
             border-radius: 10px;
         }
-
+        .color-titulos{
+            font-size: 1.5rem!important;
+        }
         .p-padrao {
             font-family: 'Roboto', sans-serif;
             font-weight: normal;
@@ -189,11 +191,16 @@
 
         @media (max-width:426px) {
             .topicos {
-                padding: 1rem;
+                padding: 0;
                 border-radius: 5px;
                 border-style: none;
                 border-width: 1px;
                 margin: 0;
+            }
+
+            .radios {
+                
+                padding: 0;
             }
 
             .topicos-opcoes-mobile-fix {
@@ -201,6 +208,9 @@
                 align-items: center;
                 margin: 0 1rem;
                 flex-direction: column;
+            }
+            .radio-titulo{
+                font-size: 25px;
             }
         }
     </style>
@@ -220,11 +230,11 @@
             </section>
         </section>
         <section id="titulos">
-            <h2 class="titulo-BR">Gostaríamos de obter seu feedback em relação à experiência de conhecer nosso maior
+            <h2 style="margin-bottom:2rem;" class="titulo-BR color-titulos">Gostaríamos de obter seu feedback em relação à experiência de conhecer nosso maior
                 patrimônio histórico e cultural. Vamos lá?</h2>
         </section>
         <form action="/action_page.php" id='form'>
-            <h2 class="p-padrao form-titulo">Formulario</h2>
+            <h2 class="p-padrao form-titulo color-titulos">Formulario</h2>
             <section class="nomecontatoemail">
                 <section class="fix-div">
                     <label for="nome" class="p-padrao nome-input">Nome:</label>
@@ -250,7 +260,7 @@
                 </section>
             </section>
             <section class="radios">
-                <h2 class="p-padrao form-titulo">Com relação ao Teatro Amazonas, avalie os seguintes tópicos</h2>
+                <h2 class="p-padrao form-titulo radio-titulo color-titulos">Com relação ao Teatro Amazonas, avalie os seguintes tópicos</h2>
                 <section class="topicos">
                     <section id="cafe">
                         <h3 style="font-size:30px;" class="p-padrao form-titulo">Café</h3>
@@ -371,15 +381,18 @@
                             </section>
 
                         </section>
-                        <p style="margin-top:4rem ;font-size:20px;" class="p-padrao form-titulo">Variedade de Produtos</p>
+                        <p style="margin-top:4rem ;font-size:20px;" class="p-padrao form-titulo">Variedade de Produtos
+                        </p>
                         <section class="topicos-opcoes">
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="variedade-loja-otimo" name="Variedade-loja" value="loja-variedade-otimo">
+                                <input type="radio" id="variedade-loja-otimo" name="Variedade-loja"
+                                    value="loja-variedade-otimo">
                                 <label class="topico-opcoes-label" for="variedade-loja-otimo">Otimo</label><br>
                             </section>
 
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="variedade-loja-bom" name="Variedade-loja" value="loja-variedade-bom">
+                                <input type="radio" id="variedade-loja-bom" name="Variedade-loja"
+                                    value="loja-variedade-bom">
                                 <label class="topico-opcoes-label" for="variedade-loja-bom">Bom</label><br>
                             </section>
 
@@ -390,7 +403,8 @@
                             </section>
 
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="variedade-loja-ruim" name="Variedade-loja" value="loja-variedade-ruim">
+                                <input type="radio" id="variedade-loja-ruim" name="Variedade-loja"
+                                    value="loja-variedade-ruim">
                                 <label class="topico-opcoes-label" for="variedade-loja-ruim">Ruim</label>
                             </section>
                         </section>
@@ -424,7 +438,8 @@
                         <p style="margin-top:4rem ;font-size:20px;" class="p-padrao form-titulo">Valores</p>
                         <section class="topicos-opcoes" style="margin-bottom: 4rem;">
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="Valores-loja-otimo" name="Valores-loja" value="loja-Valores-otimo">
+                                <input type="radio" id="Valores-loja-otimo" name="Valores-loja"
+                                    value="loja-Valores-otimo">
                                 <label class="topico-opcoes-label" for="Valores-loja-otimo">Otimo</label><br>
                             </section>
 
@@ -434,12 +449,14 @@
                             </section>
 
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="Valores-loja-regular" name="Valores-loja" value="loja-Valores-regular">
+                                <input type="radio" id="Valores-loja-regular" name="Valores-loja"
+                                    value="loja-Valores-regular">
                                 <label class="topico-opcoes-label" for="Valores-loja-regular">Regular</label>
                             </section>
 
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="Valores-loja-ruim" name="Valores-loja" value="loja-Valores-ruim">
+                                <input type="radio" id="Valores-loja-ruim" name="Valores-loja"
+                                    value="loja-Valores-ruim">
                                 <label class="topico-opcoes-label" for="Valores-loja-ruim">Ruim</label>
                             </section>
 
@@ -478,12 +495,14 @@
                         <p style="margin-top:4rem ;font-size:20px;" class="p-padrao form-titulo">Eficiência</p>
                         <section class="topicos-opcoes">
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="eficiencia-bilheteria-otimo" name="eficiencia-bilheteria" value="eficiencia-bilheteria-otimo">
+                                <input type="radio" id="eficiencia-bilheteria-otimo" name="eficiencia-bilheteria"
+                                    value="eficiencia-bilheteria-otimo">
                                 <label class="topico-opcoes-label" for="eficiencia-bilheteria-otimo">Otimo</label><br>
                             </section>
 
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="eficiencia-bilheteria-bom" name="eficiencia-bilheteria" value="eficiencia-bilheteria-bom">
+                                <input type="radio" id="eficiencia-bilheteria-bom" name="eficiencia-bilheteria"
+                                    value="eficiencia-bilheteria-bom">
                                 <label class="topico-opcoes-label" for="eficiencia-bilheteria-bom">Bom</label><br>
                             </section>
 
@@ -494,7 +513,8 @@
                             </section>
 
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="eficiencia-bilheteria-ruim" name="eficiencia-bilheteria" value="eficiencia-bilheteria-ruim">
+                                <input type="radio" id="eficiencia-bilheteria-ruim" name="eficiencia-bilheteria"
+                                    value="eficiencia-bilheteria-ruim">
                                 <label class="topico-opcoes-label" for="eficiencia-bilheteria-ruim">Ruim</label>
                             </section>
                         </section>
@@ -558,12 +578,14 @@
                         <p style="margin-top:4rem ;font-size:20px;" class="p-padrao form-titulo">Postura</p>
                         <section class="topicos-opcoes">
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="postura-visitacao-otimo" name="postura-visitacao" value="postura-visitacao-otimo">
+                                <input type="radio" id="postura-visitacao-otimo" name="postura-visitacao"
+                                    value="postura-visitacao-otimo">
                                 <label class="topico-opcoes-label" for="postura-visitacao-otimo">Otimo</label><br>
                             </section>
 
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="postura-visitacao-bom" name="postura-visitacao" value="postura-visitacao-bom">
+                                <input type="radio" id="postura-visitacao-bom" name="postura-visitacao"
+                                    value="postura-visitacao-bom">
                                 <label class="topico-opcoes-label" for="postura-visitacao-bom">Bom</label><br>
                             </section>
 
@@ -574,33 +596,37 @@
                             </section>
 
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="postura-visitacao-ruim" name="postura-visitacao" value="postura-visitacao-ruim">
+                                <input type="radio" id="postura-visitacao-ruim" name="postura-visitacao"
+                                    value="postura-visitacao-ruim">
                                 <label class="topico-opcoes-label" for="postura-visitacao-ruim">Ruim</label>
                             </section>
                         </section>
-                        <p style="margin-top:4rem;font-size:20px;" class="p-padrao form-titulo">Contextualização Historica</p>
+                        <p style="margin-top:4rem;font-size:20px;" class="p-padrao form-titulo">Contextualização
+                            Historica</p>
                         <section class="topicos-opcoes">
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="contextualizacao-historica-otimo" name="contextualizacao-historica"
-                                    value="contextualizacao-historica-otimo">
-                                <label class="topico-opcoes-label" for="contextualizacao-historica-otimo">Otimo</label><br>
+                                <input type="radio" id="contextualizacao-historica-otimo"
+                                    name="contextualizacao-historica" value="contextualizacao-historica-otimo">
+                                <label class="topico-opcoes-label"
+                                    for="contextualizacao-historica-otimo">Otimo</label><br>
                             </section>
 
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="contextualizacao-historica-bom" name="contextualizacao-historica"
-                                    value="contextualizacao-historica-bom">
+                                <input type="radio" id="contextualizacao-historica-bom"
+                                    name="contextualizacao-historica" value="contextualizacao-historica-bom">
                                 <label class="topico-opcoes-label" for="contextualizacao-historica-bom">Bom</label><br>
                             </section>
 
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="contextualizacao-historica-regular" name="contextualizacao-historica"
-                                    value="contextualizacao-historica-regular">
-                                <label class="topico-opcoes-label" for="contextualizacao-historica-regular">Regular</label>
+                                <input type="radio" id="contextualizacao-historica-regular"
+                                    name="contextualizacao-historica" value="contextualizacao-historica-regular">
+                                <label class="topico-opcoes-label"
+                                    for="contextualizacao-historica-regular">Regular</label>
                             </section>
 
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="contextualizacao-historica-ruim" name="contextualizacao-historica"
-                                    value="contextualizacao-historica-ruim">
+                                <input type="radio" id="contextualizacao-historica-ruim"
+                                    name="contextualizacao-historica" value="contextualizacao-historica-ruim">
                                 <label class="topico-opcoes-label" for="contextualizacao-historica-ruim">Ruim</label>
                             </section>
                         </section>
@@ -664,12 +690,14 @@
                         <p style="margin-top:4rem ;font-size:20px;" class="p-padrao form-titulo">Sinalização</p>
                         <section class="topicos-opcoes">
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="instalacoes-sinalizacao-otimo" name="instalacoes-sinalizacao" value="instalacoes-sinalizacao-otimo">
+                                <input type="radio" id="instalacoes-sinalizacao-otimo" name="instalacoes-sinalizacao"
+                                    value="instalacoes-sinalizacao-otimo">
                                 <label class="topico-opcoes-label" for="instalacoes-sinalizacao-otimo">Otimo</label><br>
                             </section>
 
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="instalacoes-sinalizacao-bom" name="instalacoes-sinalizacao" value="instalacoes-sinalizacao-bom">
+                                <input type="radio" id="instalacoes-sinalizacao-bom" name="instalacoes-sinalizacao"
+                                    value="instalacoes-sinalizacao-bom">
                                 <label class="topico-opcoes-label" for="instalacoes-sinalizacao-bom">Bom</label><br>
                             </section>
 
@@ -680,7 +708,8 @@
                             </section>
 
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="instalacoes-sinalizacao-ruim" name="instalacoes-sinalizacao" value="instalacoes-sinalizacao-ruim">
+                                <input type="radio" id="instalacoes-sinalizacao-ruim" name="instalacoes-sinalizacao"
+                                    value="instalacoes-sinalizacao-ruim">
                                 <label class="topico-opcoes-label" for="instalacoes-sinalizacao-ruim">Ruim</label>
                             </section>
                         </section>
