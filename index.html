@@ -77,7 +77,7 @@
 
         @media (max-width:426px) {
             .titulo-BR {
-                font-size: 1.0rem;
+                font-size: 1.2rem!important;
                 margin-top: 2rem;
                 font-family: 'Roboto', sans-serif;
                 font-weight: normal;
@@ -212,7 +212,31 @@
             .radio-titulo{
                 font-size: 25px;
             }
+        /*area de criticas*/
         }
+        .criticas{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .criticas input{
+            width: 50%;
+            height: 4rem;
+        }
+        .button-confirmar{
+            background-color:#1EE633 ;
+            color: white;
+            border-style: none;
+            box-shadow: 1px 1px 1px 1px;
+            margin-top: 1rem;
+            font-size: 1.3rem;
+            transition: 0.5s;
+        }
+        .button-confirmar:hover{
+            background-color: #14FC6D;
+        }
+        
+        
     </style>
 </head>
 
@@ -233,30 +257,30 @@
             <h2 style="margin-bottom:2rem;" class="titulo-BR color-titulos">Gostaríamos de obter seu feedback em relação à experiência de conhecer nosso maior
                 patrimônio histórico e cultural. Vamos lá?</h2>
         </section>
-        <form action="/action_page.php" id='form'>
+        <form id='form'>
             <h2 class="p-padrao form-titulo color-titulos">Formulario</h2>
             <section class="nomecontatoemail">
                 <section class="fix-div">
                     <label for="nome" class="p-padrao nome-input">Nome:</label>
-                    <input type="text" id="nome" class="nome-input" placeholder="Insira Seu Nome Completo" name="nome">
+                    <input type="text" id="nome" class="nome-input" placeholder="Insira Seu Nome Completo" name="nome" required>
                 </section>
                 <section class="fix-div">
                     <label for="tel" class="p-padrao">Contato:</label>
-                    <input type="tel" id="tel" placeholder="Contato de Telefone" name="tel">
+                    <input type="tel" id="tel" placeholder="Contato de Telefone" name="tel" required>
                 </section>
                 <section class="fix-div">
                     <label for="email" class="p-padrao">E-mail:</label>
-                    <input type="email" id="email" placeholder="Email" name="email">
+                    <input type="email" id="email" placeholder="Email" name="email" required>
                 </section>
             </section>
             <section class="paiscidade">
                 <section class="fix-div">
                     <label for="pais" class="p-padrao">Pais:</label>
-                    <input type="text" id="pais" placeholder="País" name="pais">
+                    <input type="text" id="pais" placeholder="País" name="pais" required>
                 </section>
                 <section class="fix-div">
                     <label for="cidade" class="p-padrao">Cidade:</label>
-                    <input type="text" id="cidade" placeholder="Cidade" name="cidade">
+                    <input type="text" id="cidade" placeholder="Cidade" name="cidade" required>
                 </section>
             </section>
             <section class="radios">
@@ -268,22 +292,22 @@
                         <section class="topicos-opcoes">
                             <section class="topicos-opcoes-mobile-fix">
                                 <input type="radio" id="atendimento-otimo" name="Atendimento"
-                                    value="cafe-atendimento-otimo">
+                                    value="cafe-atendimento-otimo" required>
                                 <label class="topico-opcoes-label" for="atendimento-otimo">Otimo</label><br>
                             </section>
                             <section class="topicos-opcoes-mobile-fix">
                                 <input type="radio" id="atendimento-bom" name="Atendimento"
-                                    value="cafe-atendimento-bom">
+                                    value="cafe-atendimento-bom" required>
                                 <label class="topico-opcoes-label" for="atendimento-bom">Bom</label><br>
                             </section>
                             <section class="topicos-opcoes-mobile-fix">
                                 <input type="radio" id="atendimento-regular" name="Atendimento"
-                                    value="cafe-atendimento-regular">
+                                    value="cafe-atendimento-regular" required>
                                 <label class="topico-opcoes-label" for="atendimento-regular">Regular</label>
                             </section>
                             <section class="topicos-opcoes-mobile-fix">
                                 <input type="radio" id="atendimento-ruim" name="Atendimento"
-                                    value="cafe-atendimento-ruim">
+                                    value="cafe-atendimento-ruim" required>
                                 <label class="topico-opcoes-label" for="atendimento-ruim">Ruim</label>
                             </section>
                         </section>
@@ -291,20 +315,20 @@
                         </p>
                         <section class="topicos-opcoes">
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="variedade-otimo" name="Variedade" value="cafe-variedade-otimo">
+                                <input type="radio" id="variedade-otimo" name="Variedade" value="cafe-variedade-otimo" required>
                                 <label class="topico-opcoes-label" for="variedade-otimo">Otimo</label><br>
                             </section>
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="variedade-bom" name="Variedade" value="cafe-variedade-bom">
+                                <input type="radio" id="variedade-bom" name="Variedade" value="cafe-variedade-bom" required>
                                 <label class="topico-opcoes-label" for="variedade-bom">Bom</label><br>
                             </section>
                             <section class="topicos-opcoes-mobile-fix">
                                 <input type="radio" id="variedade-regular" name="Variedade"
-                                    value="cafe-variedade-regular">
+                                    value="cafe-variedade-regular" required>
                                 <label class="topico-opcoes-label" for="variedade-regular">Regular</label>
                             </section>
                             <section class="topicos-opcoes-mobile-fix">
-                                <input type="radio" id="variedade-ruim" name="Variedade" value="cafe-variedade-ruim">
+                                <input type="radio" id="variedade-ruim" name="Variedade" value="cafe-variedade-ruim" required>
                                 <label class="topico-opcoes-label" for="variedade-ruim">Ruim</label>
                             </section>
                         </section>
@@ -767,6 +791,11 @@
                         </section>
                     </section>
                 </section>
+            </section>
+            <section class="criticas">
+                <h4 class="titulo-BR color-titulos">Criticas,Elogios ou Sugestões:</h4>
+                <textarea name="" id="" cols="100" rows="10"></textarea>
+                <input class="button-confirmar" type="submit" value="Confirmar Avaliação">
             </section>
         </form>
         </section>

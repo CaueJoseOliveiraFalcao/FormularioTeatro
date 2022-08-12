@@ -14,3 +14,6 @@ EstadosUnidos.addEventListener('click', () => {
 Espanha.addEventListener('click', () => {
     console.log('es')
 })
+
+
+document.querySelector('input').style.padding = ''
