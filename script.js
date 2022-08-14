@@ -14,14 +14,22 @@ Brasil.addEventListener('click', () => {
     document.querySelector('.cidade-form').innerHTML = 'Cidade:'
     document.querySelector('.radio-titulo').innerHTML = 'Com relação ao Teatro Amazonas, avalie os seguintes tópicos:'
     document.querySelector('.cafe-idioma').innerHTML = 'Café:'
+
     const nodeList = document.querySelectorAll(".otimo");
     for (let i = 0; i < nodeList.length; i++) {
         nodeList[i].innerHTML = 'Otimo';
     }
+
     const bom = document.querySelectorAll(".Bom");
     for (let i = 0; i < bom.length; i++) {
-        bom[i].innerHTML = 'Bombom';
+        bom[i].innerHTML = 'Bom';
     }
+
+    const regular = document.querySelectorAll(".Bom");
+    for (let i = 0; i < regular.length; i++) {
+        regular[i].innerHTML = 'Regular';
+    }
+
     document.querySelector('.nome-form').innerHTML = 'Nome:'
     document.querySelector('.nome-form').innerHTML = 'Nome:'
 })
