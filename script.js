@@ -2,17 +2,18 @@
 const Brasil = document.querySelector('.portugues')
 const EstadosUnidos = document.querySelector('.ingles')
 const Espanha = document.querySelector('.espanhol')
-    //idioma brasil 
+
+//idioma brasil 
 Brasil.addEventListener('click', () => {
-        document.querySelector('.idioma-text').innerHTML = 'Idioma'
+        document.querySelector('.idioma-text').innerHTML = 'Idioma:'
         document.querySelector('.Idioma-titulo').innerHTML = 'Gostaríamos de obter seu feedback em relação à experiência de conhecer nosso maior patrimônio histórico e cultural. Vamos lá?'
-        document.querySelector('.form-titulo').innerHTML = 'Formulario'
+        document.querySelector('.form-titulo').innerHTML = 'Formulário'
         document.querySelector('.nome-form').innerHTML = 'Nome:'
         document.querySelector('.contato-form').innerHTML = 'Contato:'
         document.querySelector('.email-form').innerHTML = 'E-mail:'
         document.querySelector('.pais-form').innerHTML = 'País:'
         document.querySelector('.cidade-form').innerHTML = 'Cidade:'
-        document.querySelector('.radio-titulo').innerHTML = 'Com relação ao Teatro Amazonas, avalie os seguintes tópicos:'
+        document.querySelector('.radio-titulo').innerHTML = 'Com relação ao Teatro Amazonas, avalie os seguintes tópicos'
         document.querySelector('.cafe-idioma').innerHTML = 'Café'
         document.querySelector('.loja-idioma').innerHTML = 'Loja'
         document.querySelector('.eficiencia').innerHTML = 'Eficiência'
@@ -21,7 +22,7 @@ Brasil.addEventListener('click', () => {
         document.querySelector('.instalacoes').innerHTML = 'Instalações'
         document.querySelector('.sinalizacao').innerHTML = 'Sinalização'
         document.querySelector('.conservacao').innerHTML = 'Conservação'
-        document.querySelector('.contexto').innerHTML = 'Contextualização Historica'
+        document.querySelector('.contexto').innerHTML = 'Contextualização Histórica'
         document.querySelector('.bilheteria').innerHTML = 'Bilheteria'
         document.querySelector('.conforto').innerHTML = 'Conforto'
         document.querySelector('.limpeza').innerHTML = 'Limpeza'
@@ -50,7 +51,7 @@ Brasil.addEventListener('click', () => {
 
         const nodeList = document.querySelectorAll(".otimo");
         for (let i = 0; i < nodeList.length; i++) {
-            nodeList[i].innerHTML = 'Otimo';
+            nodeList[i].innerHTML = 'Ótimo';
         }
 
         const bom = document.querySelectorAll(".Bom");
@@ -71,9 +72,10 @@ Brasil.addEventListener('click', () => {
         document.querySelector('.criticas-titulo').innerHTML = 'Criticas,Elogios ou Sugestões:'
         document.querySelector('.button-confirmar').value = 'Confirmar'
     })
-    //idioma ingles
+
+//idioma ingles
 EstadosUnidos.addEventListener('click', () => {
-    document.querySelector('.idioma-text').innerHTML = 'language'
+    document.querySelector('.idioma-text').innerHTML = 'Language:'
     document.querySelector('.Idioma-titulo').innerHTML = 'We would like to get your feedback regarding the experience of getting to know our greatest historical and cultural heritage. Shall we?'
     document.querySelector('.form-titulo').innerHTML = 'Form'
     document.querySelector('.nome-form').innerHTML = 'Name:'
@@ -139,9 +141,10 @@ EstadosUnidos.addEventListener('click', () => {
     document.querySelector('.criticas-titulo').innerHTML = 'Comments, compliments or suggestions '
     document.querySelector('.button-confirmar').value = 'Confirm'
 })
+//Idioma Espanhol
 
 Espanha.addEventListener('click', () => {
-    document.querySelector('.idioma-text').innerHTML = 'Idioma'
+    document.querySelector('.idioma-text').innerHTML = 'Idioma:'
     document.querySelector('.Idioma-titulo').innerHTML = 'Nos gustaría conocer tu opinión sobre la experiencia de conocer nuestro mayor patrimonio histórico y cultural. ¿Vamos allá?'
     document.querySelector('.form-titulo').innerHTML = 'Forma'
     document.querySelector('.nome-form').innerHTML = 'Nombre:'
